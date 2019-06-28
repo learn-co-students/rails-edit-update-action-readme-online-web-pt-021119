@@ -1,0 +1,13 @@
+<h1>Edit Form</h1>
+
+<%= form_tag articles_path do %>
+
+  <label>Articles title:</label><br />
+  <%= text_area_tag :title %><br />
+
+  <label>Article description:</label><br />
+  <%= text_area_tag :description %><br />
+
+  <%= submit_tag "Submit Article" %>
+
+<% end %>
