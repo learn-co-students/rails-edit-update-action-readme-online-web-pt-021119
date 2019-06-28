@@ -1,13 +1,13 @@
 <h1>Edit Form</h1>
 
-<%= form_tag articles_path do %>
+<%= form_for @article do |f| %>
 
-  <label>Articles title:</label><br />
-  <%= text_area_tag :title %><br />
+  <%= f.label 'Article Title' %><br />
+  <%= f.text_field :title %><br />
 
-  <label>Article description:</label><br />
-  <%= text_area_tag :description %><br />
+  <%= f.label 'Article Description' %><br />
+  <%= f.text_field :description %><br />
 
-  <%= submit_tag "Submit Article" %>
+  <%= f.submit "Submit Article" %>
 
 <% end %>
